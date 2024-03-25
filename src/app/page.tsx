@@ -1,4 +1,7 @@
 import { Badge } from "@/components/ui/badge";
+import { Button } from "@/components/ui/button";
+import { services } from "@/lib/services";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -32,14 +35,37 @@ export default function Home() {
           <div className="bg-[#000000b1] w-full h-full absolute"></div>
           <div className="flex flex-col items-center px-6 lg:px-48 py-16 relative">
             <h1 className="text-white text-4xl font-bold mb-16">About Us</h1>
-            <div className="grid grid-cols-2 items-center">
-              <p className="text-white leading-8">
-              Hearing Electronic Tools (Sarl) is one of the Business sector growing company. It is 100% black owned company, established in 2017 currently operating in Kinshasa, Lubumbashi and Johannesburg, in DRCongo and South Africa. The company seeks to address Variable business services: Projects managements, Security, guarding, Painting, IT, Delivering of all kind of materials, and mining.
-              The company intends to make a significant impact in the Business sector economy both in terms of production and processing. Which in turn contribute to poverty alleviation, job creation and economic development? It has been establish upon an extensive array of knowledge, experience, and skills of its founders, who are dare proud to be taking HET, to higher elevations. To-date we are proud to have accrued years of considerable experience in the Business sector. 
+            <div className="grid grid-cols-3 items-center">
+              <p className="text-white leading-8 col-span-2">
+              Hearing Electronic Tools (Sarl) est une des entreprise en pleine croissance du secteur des affaires. C’est une société 100 % détenue par des Africains, créée en 2017 et opérant actuellement à Kinshasa, Lubumbashi et Johannesburg, en République démocratique du Congo et en Afrique du Sud. L’entreprise vise à fournir des services commerciaux variés tels que la gestion de projets, la sécurité, la surveillance, la peinture, l’informatique, la livraison de tous types de matériaux et l’exploitation minière. Elle a l’intention d’avoir un impact significatif sur l’économie du secteur des affaires, tant en termes de production que de traitement. Ce faisant, elle contribue à la réduction de la pauvreté, à la création d’emplois et au développement économique. L’entreprise repose sur une vaste expérience, des connaissances et des compétences de ses fondateurs, qui sont fiers de porter HET vers de nouveaux sommets. À ce jour, nous sommes fiers d’avoir accumulé des années d’expérience considérable dans le secteur des affaires. 
               </p>
-              <div className="w-[400px] h-[400px] bg-primary ml-8 bg-[url('/4.jpg')] bg-cover"></div>
+              <div className="w-[300px] h-[300px] bg-primary ml-8 bg-[url('/4.jpg')] bg-cover"></div>
             </div>
+            <Button className="mt-16">
+              <Link href="/about-us">Voir Plus</Link>
+            </Button>
           </div>
+        </div>
+      </div>
+      <div className="px-6 lg:px-48 py-16 relative">
+        <h1 className="text-4xl font-bold mb-16 text-center">Our Services</h1>
+        <div className="grid grid-cols-3 gap-8">
+          {
+            services.map((service, index) => (
+              <div className="flex flex-col items-center justify-between" key={index}>
+                <div className="flex flex-col items-center">
+                  <div className="w-20 h-20 bg-no-repeat bg-cover flex">
+                    <img src={service.icon} alt="" />
+                  </div>
+                  <h2 className="py-8 font-bold text-xl">{service.name}</h2>
+                </div>
+                <p>{service.minDesc}</p>
+                <Button className="my-8">
+                  <Link href={service.link}>En savoir Plus</Link>
+                </Button>
+              </div>
+            ))
+          }
         </div>
       </div>
     </div>
