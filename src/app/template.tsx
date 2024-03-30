@@ -4,6 +4,11 @@ import Link from "next/link";
 import Logo from "./components/Logo";
 import { Button } from "@/components/ui/button";
 
+type AppLink = {
+    name: string;
+    link: string;
+}
+
 export default function Template({
     children,
   }: Readonly<{
@@ -15,10 +20,19 @@ export default function Template({
         setOpenMenu(!openMenu)
     }
 
-    const menuItems = [
-        "Accueil",
-        "A Propos",
-        "Services",
+    const menuItems: AppLink[] = [
+        {
+            name: "Accueil",
+            link: "/"
+        },
+        {
+            name: "A Propos",
+            link: "/about-us"
+        },
+        {
+            name: "Services",
+            link: "/services"
+        },
       ];
 
     return (
@@ -31,7 +45,7 @@ export default function Template({
                             <span className="italic font-bold">HET SARL</span>
                         </Link>
                     </div>
-                    <div className="lg:hidden ">
+                    <div className="lg:hidden">
                         <button type="button" onClick={toggleMenu} className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700">
                             <span className="sr-only">Open main menu</span>
                             <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" aria-hidden="true">
@@ -41,8 +55,12 @@ export default function Template({
                     </div>
                     <div className="hidden lg:flex lg:gap-x-12">
                         {
-                            menuItems.map((m, i) => (
-                                <Link key={i} href="#" className="text-sm font-semibold leading-6 text-gray-900">{m}</Link>
+                            menuItems.map( item => (
+                                <Link 
+                                    key={item.link} href={item.link} className="text-sm font-semibold leading-6 text-gray-900"
+                                >
+                                    {item.name}
+                                </Link>
                             ))
                         }
                     </div>
@@ -52,7 +70,7 @@ export default function Template({
                         </Button>
                     </div>
                 </nav>
-                <div className={openMenu ? "hidden" : "lg:hidden"} role="dialog" aria-modal="true">
+                <div className={openMenu ? "flex lg:hidden" : "hidden"} role="dialog" aria-modal="true">
                     <div className="fixed inset-0 z-50"></div>
                     <div className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
                         <div className="flex items-center justify-between">
@@ -72,7 +90,7 @@ export default function Template({
                             <div className="space-y-2 py-6">
                             {
                                 menuItems.map((m, i) => (
-                                    <Link key={i} href="#" className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">{m}</Link>
+                                    <Link key={i} href={m.link} className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">{m.name}</Link>
                                 ))
                             }
                             </div>
@@ -88,6 +106,14 @@ export default function Template({
                 </div>
             </header>
             {children}
+            <footer className="flex flex-col bg-primary text-white py-10 gap-8 justify-center items-center">
+                <div>
+                    <Logo />
+                </div>
+                <div>
+                © 2024 HTE Sarl, All rights reserved.
+                </div>
+            </footer>
         </div>
     );
   }

@@ -1,7 +1,40 @@
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
+import { InfiniteMovingCards } from "@/components/ui/infinite-cards";
 import { services } from "@/lib/services";
 import Link from "next/link";
+
+const testimonials = [
+  {
+    quote:
+      "It was the best of times, it was the worst of times, it was the age of wisdom, it was the age of foolishness, it was the epoch of belief, it was the epoch of incredulity, it was the season of Light, it was the season of Darkness, it was the spring of hope, it was the winter of despair.",
+    name: "Charles Dickens",
+    title: "A Tale of Two Cities",
+  },
+  {
+    quote:
+      "To be, or not to be, that is the question: Whether 'tis nobler in the mind to suffer The slings and arrows of outrageous fortune, Or to take Arms against a Sea of troubles, And by opposing end them: to die, to sleep.",
+    name: "William Shakespeare",
+    title: "Hamlet",
+  },
+  {
+    quote: "All that we see or seem is but a dream within a dream.",
+    name: "Edgar Allan Poe",
+    title: "A Dream Within a Dream",
+  },
+  {
+    quote:
+      "It is a truth universally acknowledged, that a single man in possession of a good fortune, must be in want of a wife.",
+    name: "Jane Austen",
+    title: "Pride and Prejudice",
+  },
+  {
+    quote:
+      "Call me Ishmael. Some years ago—never mind how long precisely—having little or no money in my purse, and nothing particular to interest me on shore, I thought I would sail about a little and see the watery part of the world.",
+    name: "Herman Melville",
+    title: "Moby-Dick",
+  },
+];
 
 export default function Home() {
   return (
@@ -35,11 +68,11 @@ export default function Home() {
           <div className="bg-[#000000b1] w-full h-full absolute"></div>
           <div className="flex flex-col items-center px-6 lg:px-48 py-16 relative">
             <h1 className="text-white text-4xl font-bold mb-16">About Us</h1>
-            <div className="grid grid-cols-3 items-center">
+            <div className="flex flex-col items-center">
               <p className="text-white leading-8 col-span-2">
               Hearing Electronic Tools (Sarl) est une des entreprise en pleine croissance du secteur des affaires. C’est une société 100 % détenue par des Africains, créée en 2017 et opérant actuellement à Kinshasa, Lubumbashi et Johannesburg, en République démocratique du Congo et en Afrique du Sud. L’entreprise vise à fournir des services commerciaux variés tels que la gestion de projets, la sécurité, la surveillance, la peinture, l’informatique, la livraison de tous types de matériaux et l’exploitation minière. Elle a l’intention d’avoir un impact significatif sur l’économie du secteur des affaires, tant en termes de production que de traitement. Ce faisant, elle contribue à la réduction de la pauvreté, à la création d’emplois et au développement économique. L’entreprise repose sur une vaste expérience, des connaissances et des compétences de ses fondateurs, qui sont fiers de porter HET vers de nouveaux sommets. À ce jour, nous sommes fiers d’avoir accumulé des années d’expérience considérable dans le secteur des affaires. 
               </p>
-              <div className="w-[300px] h-[300px] bg-primary ml-8 bg-[url('/4.jpg')] bg-cover"></div>
+              <div className="w-[300px] h-[300px] bg-primary my-4 bg-[url('/4.jpg')] bg-cover"></div>
             </div>
             <Button className="mt-16">
               <Link href="/about-us">Voir Plus</Link>
@@ -49,7 +82,7 @@ export default function Home() {
       </div>
       <div className="px-6 lg:px-48 py-16 relative">
         <h1 className="text-4xl font-bold mb-16 text-center">Our Services</h1>
-        <div className="grid grid-cols-3 gap-8">
+        <div className="flex flex-col gap-10">
           {
             services.map((service, index) => (
               <div className="flex flex-col items-center justify-between" key={index}>
@@ -67,6 +100,10 @@ export default function Home() {
             ))
           }
         </div>
+      </div>
+      <div className="bg-primary px-6 lg:px-48 py-16 relative">
+        <h1 className="text-4xl font-bold mb-16 text-center text-white">Nos Partenaires</h1>
+        <InfiniteMovingCards items={testimonials} />
       </div>
     </div>
   );
