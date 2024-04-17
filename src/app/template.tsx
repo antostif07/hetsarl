@@ -42,7 +42,7 @@ export default function Template({
                     <div className="flex lg:flex-1">
                         <Link href="#" className="-m-1.5 p-1.5 flex items-center">
                             <Logo />
-                            <span className="italic font-bold">HET SARL</span>
+                            <span className="italic font-bold mx-2">HET SARL</span>
                         </Link>
                     </div>
                     <div className="lg:hidden">

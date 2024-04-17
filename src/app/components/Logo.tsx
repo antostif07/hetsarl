@@ -1,5 +1,5 @@
 export default function Logo() {
     return (
-        <img src="/logo-hetsarl.png" className="w-16" />
+        <img src="/logo-hetsarl.jpg" className="w-16" />
     )
 }
