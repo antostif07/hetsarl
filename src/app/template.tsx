@@ -106,7 +106,7 @@ export default function Template({
                 </div>
             </header>
             {children}
-            <footer className="flex flex-col bg-primary text-white py-10 gap-8 justify-center items-center">
+            <footer className="flex flex-col bg-slate-900 text-white py-10 gap-8 justify-center items-center">
                 <div>
                     <Logo />
                 </div>

@@ -7,7 +7,7 @@ type Service = {
 }
 export const services: Service[] = [
     {
-        name: 'Négoce (Courtage commercial)',
+        name: 'Négoce',
         minDesc: 'Nous facilitons les transactions et permet aux entreprises de prendre des décisions éclairées en matière de finances et d’assurances. 🤝💼',
         link: '/services#negoce',
         icon: '/negoce.png'
