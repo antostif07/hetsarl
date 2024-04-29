@@ -1,11 +1,13 @@
 "use client"
-import "../page.css"
+
+import Navbar from '@/components/Navbar/Navbar';
+import './page.css'
+import Hero from '@/components/Hero/Hero';
 import WhatWeDo from '@/components/WhatWeDo/WhatWeDo';
 import { motion, useAnimation } from 'framer-motion';
 import HowItWorks from '@/components/HowItWorks/HowItWorks';
 import Testimonials from '@/components/Testimonials/Testimonials';
 import Footer from '@/components/Footer/Footer';
-import Navbar from '@/components/Navbar/Navbar';
 
 export default function Home() {
 
@@ -14,6 +16,7 @@ export default function Home() {
   return (
     <motion.div className="app" animate={controls}>
       <Navbar />
+      <Hero />
       {/* <BrandingVideo /> */}
       <WhatWeDo />
       {/* <motion.div
