@@ -73,7 +73,7 @@ const   HowItWorks = () => {
                                 </motion.div>
 
                                 {/* right side */}
-                                <div className="icon w-8">
+                                <div className="icon sm:w-96 w-32">
                                     <Image 
                                     src={feature.icon}
                                     sizes='300px'

@@ -13,7 +13,17 @@ const Footer = () => {
                     Hearing Electronic Tools SARL 
                 </span>
                 <EmailBox />
-
+                <div className='flex justify-between w-full text-white lg:flex-row flex-col gap-8 sm:gap-0'>
+                    <div className='flex flex-col text-white'>
+                        <span className='font-bold'>Contact</span>
+                        <a href="tel:+243900548492">+243 900 548 492</a>
+                    </div>
+                    <div className='flex flex-col text-white'>
+                        <span className='font-bold'>Adresse</span>
+                        <span>Référence En diagonale de l'hôtel memling <br />
+Adresse : Avenue du Tchad/ numéro 5 /commune de la gombe</span>
+                    </div>
+                </div>
                 <hr className='bg-white'/>
                 <div className="f-menu">
                 {

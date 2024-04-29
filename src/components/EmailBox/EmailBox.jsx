@@ -51,7 +51,7 @@ const EmailBox = () => {
         viewport={{
           once: true,
         }}
-        className="getFunded">
+        className="getFunded text-xs px-2">
             Nous Contacter
         </motion.div>
     </motion.div>

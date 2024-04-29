@@ -2,16 +2,15 @@
 
 import React from 'react'
 import './WhatWeDo.css'
-import { features } from '@/utils/data'
-import Image from 'next/image'
 import { motion } from 'framer-motion'
 import { containerVariants, desVariants, tagVariants, titleVariants } from '@/utils/animation'
 import Link from 'next/link'
 
 const WhatWeDo = () => {
   return (
-    <div className="wwd-wrapper">
-        <div className="container">
+    <div className="wwd-wrapper bg-[url('/4.jpg')] relative">
+        <div className="bg-[#000000b1] w-full h-full absolute"></div>
+        <div className="container relative">
             <div className="wwd-container">
                 {/* head of section */}
                 <div className="wwd-head">
@@ -25,7 +24,7 @@ const WhatWeDo = () => {
                     initial="offscreen"
                     whileInView={"onscreen"}
                     variants={titleVariants}
-                    className='title'
+                    className='text-3xl font-bold text-white'
                     >
                         {" "}
                         HEARING ELECTRONIC TOOLS SARL
