@@ -117,25 +117,15 @@ export const testimonialsData = [
   {
     comment:
       "SUPER HAPPY! Not only do you get to see the best seed and Early Stage companies but the exciting part is there’s a bunch of investors",
-    name: "Zach Lee",
-    profession: "QA specialist, Matrix architect",
+    name: "Chambre de commerce nationale et de l'economie",
+    profession: "RD. Congo",
+    image: "/partner-1.jpg",
   },
   {
     comment:
       "I have been working with Cotek on our fundraising strategies. They understands the in depth strategies of Venture Capital and early stage fund raising/company",
-    name: "Cheryl R. Weiss",
-    profession: "Founder, Dubrow Cafeteria",
-  },
-  {
-    comment:
-      "Another masterpiece really digging into the art of venture funds, portfolio construction and deal mechanics! Loved it - I can say without hesitation that it is incredibly valuable for anyone who is investing",
-    name: "Vicky R. Lane",
-    profession: "Directork, Lafayette Radio",
-  },
-  {
-    comment:
-      "BlueVenture is the premier setting for entrepreneurs and investors alike to exchange ideas, and network. As an entrepreneur, I can rely on the BlueVenture to bring top caliber speakers, entrepreneurs and investors",
-    name: "Jennifer Dubois",
-    profession: "Manager, China Coast",
+    name: "Probase Kuwait",
+    profession: "Koweit",
+    image: "/partner-2.jpg",
   },
 ];

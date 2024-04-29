@@ -42,31 +42,27 @@ const SlickSlider = () => {
         ]
     }
   return (
-    <div>
+    <div className=''>
         <Slider {...settings}>
             {
                 testimonialsData.map((comment, i)=> (
                     <div key={i} className='comment'>
                         {/* upper side */}
-                        <div className="c-content">
+                        <div className="flex justify-center">
                             <Image
-                            src={"/apos.svg"} 
+                            src={comment.image} 
                             className='apos-slider' 
                             alt='apos'
-                            width={40}
-                            height={30}
+                            width={200}
+                            height={150}
                             />
-                            {/* <span>{comment.comment}</span> */}
                         </div>
 
                         {/* lower side */}
                         <div className="c-info">
-                            <div className="c-avatar">
-                                {/* {comment.name[0]} */}
-                            </div>
                             <div className="c-person">
-                                {/* <span>{comment.name}</span> */}
-                                {/* <span>{comment.profession}</span> */}
+                                <span>{comment.name}</span>
+                                <span>{comment.profession}</span>
                             </div>
                         </div>
                     </div>

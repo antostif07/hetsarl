@@ -5,7 +5,7 @@ import Image from 'next/image'
 import {motion} from 'framer-motion'
 import { tagVariants, titleVariants } from '@/utils/animation'
 
-const HowItWorks = () => {
+const   HowItWorks = () => {
 
     const featureVariants = {
         offscreen: {
@@ -73,11 +73,12 @@ const HowItWorks = () => {
                                 </motion.div>
 
                                 {/* right side */}
-                                <div className="icon">
+                                <div className="icon w-8">
                                     <Image 
-                                    src={feature.icon} 
-                                    width={128} 
-                                    height={128} 
+                                    src={feature.icon}
+                                    sizes='300px'
+                                    width={512} 
+                                    height={512} 
                                     alt='feature' 
                                     style={{translate: "50% 0rem"}}
                                     />
