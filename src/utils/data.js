@@ -58,6 +58,41 @@ export const features = [
   },
 ];
 
+export const furnitures = [
+  {
+    // icon: "/OurDiff/Frame-0.png",
+    title: "Nettoyage",
+    des: "Entretien professionnel de vos locaux et espaces de travail.",
+  },
+  {
+    title: "Réapprovisionnement",
+    des: "Gestion et fourniture de vos stocks de produits et de matériel.",
+  },
+  {
+    title: "Peinture et rénovation",
+    des: "Rénovation et embellissement de vos maisons et bâtiments.",
+  },
+  {
+    title: "Entretien général",
+    des: "Prise en charge de l'entretien régulier de vos installations.",
+  },
+  {
+    title: "Livraison de matériel informatique",
+    des: "Fourniture et livraison de matériel informatique adapté à vos besoins.",
+  },
+  {
+    title: "Entretien de climatisation",
+    des: "Maintenance et réparation de vos systèmes de climatisation.",
+  },
+  {
+    title: "Consommables de bureau",
+    des: "Fourniture de tous vos besoins en fournitures de bureau.",
+  },
+  {
+    title: "Maintenance générale",
+    des: "Intervention et réparation sur vos équipements et installations.",
+  },
+]
 export const ourDiffFeatures = [
   {
     icon: "/OurDiff/Frame-0.png",
