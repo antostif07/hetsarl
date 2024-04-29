@@ -79,6 +79,7 @@ export const ourDiffFeatures = [
 export const hitFeatures = [
   {
     icon: "/negoce.png",
+    bg: "/1.jpg",
     title: "Négoce",
     des: "Nous nous constituons en une plateforme de négoce et avons construit un réseau efficace et fiable de producteurs et de coopératives minières qui exploitent les matières premières. Nous avons la possibilité de fournir des minerais stratégiques très recherchés pour les industries modernes.",
   },

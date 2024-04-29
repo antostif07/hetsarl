@@ -51,8 +51,10 @@ const   HowItWorks = () => {
                             variants={featureVariants}
                             initial="offscreen"
                             whileInView={"onscreen"}
-                            className='hiw-feature' 
+                            // style={{'--image-url': `url(${feature.bg})`}}
+                            className={`hiw-feature bg-[image:var(--image-url)] relative`} 
                             key={i}>
+                                {/* <div className="bg-[#0000009f] w-full h-full absolute -m-[15px] rounded-[2rem]"></div> */}
                                 {/* left side */}
                                 <motion.div 
                                 initial={{ opacity: 0, x: -100 }}
@@ -65,7 +67,7 @@ const   HowItWorks = () => {
                                         delay: .7
                                     }
                                 }}
-                                className="detail"
+                                className="detail relative"
                                 >
                                     <span className='des'>0{i+1}</span>
                                     <span className='sec-title'>{feature.title}</span>
