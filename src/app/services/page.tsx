@@ -3,10 +3,10 @@
 import { motion, useAnimation } from 'framer-motion';
 import Footer from '@/components/Footer/Footer';
 import Navbar from '@/components/Navbar/Navbar';
-import Title from '@/app/services/components/Title';
 import OurDiff from '@/app/services/components/OurDiff/OurDiff'
 import Fournitures from '@/app/services/components/OurDiff/Fournitures'
 import Investment from '@/app/services/components/OurDiff/Investment'
+import Title from '@/components/Title'
 
 export default function Home() {
 
@@ -15,7 +15,7 @@ export default function Home() {
   return (
     <motion.div className="app" animate={controls}>
       <Navbar />
-      <Title />
+      <Title text={"Nos Services"} imageUrl='/bg.jpg' />
       <motion.div
       onViewportEnter={()=> 
         controls.start({

@@ -21,7 +21,7 @@ const   HowItWorks = () => {
     }
 
   return (
-    <div className="hiw-wrapper">
+    <div className="pt-12">
         <div className="container">
             <div className="hiw-container">
                 {/* head */}
@@ -51,10 +51,10 @@ const   HowItWorks = () => {
                             variants={featureVariants}
                             initial="offscreen"
                             whileInView={"onscreen"}
-                            // style={{'--image-url': `url(${feature.bg})`}}
-                            className={`hiw-feature bg-[image:var(--image-url)] relative`} 
+                            style={{'--image-url': `url(${feature.bg})`}}
+                            className={`hiw-feature bg-[image:var(--image-url)] bg-cover relative`} 
                             key={i}>
-                                {/* <div className="bg-[#0000009f] w-full h-full absolute -m-[15px] rounded-[2rem]"></div> */}
+                                <div className="bg-[#00000071] w-full h-full absolute -m-[16px] rounded-[2rem]"></div>
                                 {/* left side */}
                                 <motion.div 
                                 initial={{ opacity: 0, x: -100 }}
@@ -69,13 +69,13 @@ const   HowItWorks = () => {
                                 }}
                                 className="detail relative"
                                 >
-                                    <span className='des'>0{i+1}</span>
-                                    <span className='sec-title'>{feature.title}</span>
-                                    <span className='text'>{feature.des}</span>
+                                    <span className='text-white'>0{i+1}</span>
+                                    <span className='capitalize text-2xl sm:text-4xl text-white'>{feature.title}</span>
+                                    <span className='text-white text-sm sm:text-xl'>{feature.des}</span>
                                 </motion.div>
 
                                 {/* right side */}
-                                <div className="icon sm:w-96 w-32">
+                                {/* <div className="icon sm:w-96 w-32">
                                     <Image 
                                     src={feature.icon}
                                     sizes='300px'
@@ -84,7 +84,7 @@ const   HowItWorks = () => {
                                     alt='feature' 
                                     style={{translate: "50% 0rem"}}
                                     />
-                                </div>
+                                </div> */}
                             </motion.div>
                         ))
                     }

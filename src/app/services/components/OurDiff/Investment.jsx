@@ -14,9 +14,10 @@ const Investment = () => {
                     variants={tagVariants}
                     initial="offscreen"
                     whileInView={"onscreen"}
-                    className='tag text-4xl'>
+                    className='text-4xl text-blue-950'>
                         Investissement et Trading
                     </motion.span>
+                    <div className="h-48 sm:h-96 w-full bg-[url('/investment-bg.jpg')] bg-cover bg-center bg-no-repeat rounded-3xl"></div>
                     {/* <motion.span 
                     variants={titleVariants}
                     initial="offscreen"
@@ -29,7 +30,7 @@ const Investment = () => {
                     variants={desVariants}
                     initial="offscreen"
                     whileInView={"onscreen"}
-                    className='text-white'>
+                    className=''>
                         <p className='mb-4'>
                         Notre société entretient des rapports solides dans le secteur de l'investissement avec la Chambre de commerce nationale et de l'économie du Congo (CCNE-RDC) afin d'assurer la promotion des immenses potentialités de la RDC dans tous les secteurs clés du développement.
                         </p>

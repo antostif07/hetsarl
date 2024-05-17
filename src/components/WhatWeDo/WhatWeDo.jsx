@@ -8,10 +8,10 @@ import Link from 'next/link'
 
 const WhatWeDo = () => {
   return (
-    <div className="wwd-wrapper bg-[url('/4.jpg')] relative">
+    <div className="wwd-wrapper bg-[url('/4.jpg')] bg-cover bg-no-repeat relative">
         <div className="bg-[#000000b1] w-full h-full absolute"></div>
         <div className="container relative">
-            <div className="wwd-container">
+            <div className="flex flex-col gap-8 items-center justify-center sm:p-4 mt-6">
                 {/* head of section */}
                 <div className="wwd-head">
                     <motion.span
@@ -33,7 +33,7 @@ const WhatWeDo = () => {
                     initial="offscreen"
                     whileInView={"onscreen"}
                     variants={desVariants}
-                    className='des'
+                    className='text-xl'
                     >en sigle HET SARL, est une société de droit congolais, créée en 2017 et opérant actuellement à Kinshasa et sur toute l'étendue de la RDC. Elle vise à faciliter la mise en relation d'affaires entre les acheteurs et les vendeurs dans tous les secteurs, principalement dans le secteur minier (or, diamant, coltan, lithium, niobium, cuivre, cobalt, wolframite, fer, étain et bien d'autres). Nous sommes en mesure de fournir des services commerciaux variés tels que la fourniture de matières premières (métaux), la gestion de projets privés et publics de l'État, en partenariat avec la Chambre de commerce officielle du Congo. Ainsi, nous avons pour objectif de contribuer à la réduction de la pauvreté, à la création d'emplois et au développement global du pays. Nous sommes constitués en une plateforme au sein de laquelle nous rassemblons des producteurs et des coopératives dans les secteurs minier, agricole et bien d'autres.</motion.span>
                 </div>
 
@@ -132,7 +132,7 @@ const WhatWeDo = () => {
                             talent management.
                         </span>
                     </div> */}
-                    <Link className="m-funded-button" href={"/about-us"}>
+                    <Link className="" href={"/about-us"}>
                         Voir Plus
                     </Link>
                 </motion.div>

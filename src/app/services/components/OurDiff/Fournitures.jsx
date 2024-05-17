@@ -19,6 +19,7 @@ const Fournitures = () => {
                     className='hiw-head text-4xl'>
                         Fourniture de biens et services
                     </motion.span>
+                    <div className="h-48 sm:h-96 w-full bg-[url('/fourniture-bg.jpg')] bg-cover bg-center rounded-3xl"></div>
                     {/* <motion.span 
                     variants={titleVariants}
                     initial="offscreen"

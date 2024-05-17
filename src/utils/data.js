@@ -114,17 +114,19 @@ export const ourDiffFeatures = [
 export const hitFeatures = [
   {
     icon: "/negoce.png",
-    bg: "/1.jpg",
+    bg: "/negoce-bg.jpg",
     title: "Négoce",
     des: "Nous nous constituons en une plateforme de négoce et avons construit un réseau efficace et fiable de producteurs et de coopératives minières qui exploitent les matières premières. Nous avons la possibilité de fournir des minerais stratégiques très recherchés pour les industries modernes.",
   },
   {
     icon: "/fourniture.png",
+    bg: "/fourniture-bg.jpg",
     title: "Fournitures de bien et service",
     des: "Notre société propose une gamme complète de services, incluant le nettoyage, le réapprovisionnement, la peinture et la rénovation de maisons et bâtiments, l'entretien général, la livraison de matériel informatique, l'entretien de climatisation, la fourniture de consommables de bureau et la maintenance générale.",
   },
   {
     icon: "/investment.png",
+    bg: "/investment-bg.jpg",
     title: "Investissement",
     des: "Notre société entretient des rapports solides dans le secteur de l'investissement avec la Chambre de commerce nationale et de l'économie du Congo (CCNE-RDC) afin d'assurer la promotion des immenses potentialités de la RDC dans tous les secteurs clés du développement.",
   },

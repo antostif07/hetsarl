@@ -30,6 +30,7 @@ const OurDiff = () => {
                     initial="offscreen"
                     whileInView={"onscreen"}
                     className='text-white'>
+                    <div className="h-48 sm:h-96 w-full bg-[url('/negoce-bg.jpg')] bg-cover bg-center rounded-3xl"></div>
                         <p className='mb-8'>
                             Nous nous constituons en une plateforme de négoce et avons construit un réseau efficace et fiable de producteurs et de coopératives minières qui exploitent les matières premières. Nous avons la possibilité de fournir des minerais stratégiques très recherchés pour les industries modernes. Nous avons à notre actif les minerais suivants : or, cuivre concentré cathode, cobalt concentré et hydroxyde, coltan, wolframite, cassitérite, lithium, diamant, bauxite, fer, étain, nickel, ilménite, niobium, pierres de couleur, germanium, argile, sable asphaltique, bois rouge, vert, noir et charbon de bois, platine, palladium, vanadium, et bien d'autres matières stratégiques.
                         </p>
