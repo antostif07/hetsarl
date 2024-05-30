@@ -44,7 +44,6 @@
 
 .hiw-feature .detail >:nth-child(1) {
     font-weight: bold;
-    font-size: 1.1rem;
 }
 
 .hiw-feature:nth-of-type(2) {

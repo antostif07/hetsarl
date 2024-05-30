@@ -69,8 +69,8 @@ const   HowItWorks = () => {
                                 }}
                                 className="detail relative"
                                 >
-                                    <span className='text-white'>0{i+1}</span>
-                                    <span className='capitalize text-2xl sm:text-4xl text-white'>{feature.title}</span>
+                                    {/* <span className='text-white'>0{i+1}</span> */}
+                                    <span className='capitalize text-6xl text-white tag'>{feature.title}</span>
                                     <span className='text-white text-sm sm:text-xl'>{feature.des}</span>
                                 </motion.div>
 

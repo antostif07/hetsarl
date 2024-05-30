@@ -127,7 +127,7 @@ export const hitFeatures = [
   {
     icon: "/investment.png",
     bg: "/investment-bg.jpg",
-    title: "Investissement",
+    title: "Investissement / Trading",
     des: "Notre société entretient des rapports solides dans le secteur de l'investissement avec la Chambre de commerce nationale et de l'économie du Congo (CCNE-RDC) afin d'assurer la promotion des immenses potentialités de la RDC dans tous les secteurs clés du développement.",
   },
 ];
