@@ -60,27 +60,32 @@ export const features = [
 
 export const furnitures = [
   {
-    // icon: "/OurDiff/Frame-0.png",
+    bg: "/furniture-1.jpg",
     title: "Nettoyage",
     des: "Entretien professionnel de vos locaux et espaces de travail.",
   },
   {
+    bg: "/furniture-2.jpg",
     title: "Réapprovisionnement",
     des: "Gestion et fourniture de vos stocks de produits et de matériel.",
   },
   {
+    bg: "/furniture-3.jpg",
     title: "Peinture et rénovation",
     des: "Rénovation et embellissement de vos maisons et bâtiments.",
   },
   {
+    bg: "/furniture-5.jpg",
     title: "Entretien général",
     des: "Prise en charge de l'entretien régulier de vos installations.",
   },
   {
+    bg: "/furniture-4.jpg",
     title: "Livraison de matériel informatique",
     des: "Fourniture et livraison de matériel informatique adapté à vos besoins.",
   },
   {
+    bg: "/furniture-6.jpg",
     title: "Entretien de climatisation",
     des: "Maintenance et réparation de vos systèmes de climatisation.",
   },
@@ -93,6 +98,7 @@ export const furnitures = [
     des: "Intervention et réparation sur vos équipements et installations.",
   },
 ]
+
 export const ourDiffFeatures = [
   {
     icon: "/OurDiff/Frame-0.png",

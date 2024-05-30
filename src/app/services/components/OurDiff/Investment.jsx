@@ -44,6 +44,12 @@ const Investment = () => {
                         Le contexte en RDC est favorable avec les systèmes de BOT, JV et PPP, ou à la limite, des échanges avec les matières premières afin de permettre au pays de s'auto-développer. Nous avons besoin de partenaires flexibles et ambitieux, quelle que soit leur origine. Nous sommes maîtres de notre destin et libres de traiter avec tout le monde, du moins sur la même longueur d'onde et dans un rapport mutuel gagnant-gagnant.
                         </p>
                         <p className='mb-4'>
+                        Nous avons de mine de matières premières pour trader ou servir comme garantie pour les financements.
+                        </p>
+                        <p className='mb-4'>
+                        La société hearing électronic tools SARL lence un appel a tout partenaire peut importe le domaine pour avoir une représentation en DRC dans d'une collaboration fructueuse et globale.
+                        </p>
+                        <p className='mb-4'>
                         Nous sommes également à la recherche de partenaires financiers pour la gestion des déchets ménagers à Kinshasa, surtout les déchets plastiques pour la transformation en carburant. Nous avons déjà un marché cible et plus ou moins 10 millions de tonnes de déchets.
                         </p>
                         <p className='mb-4'>

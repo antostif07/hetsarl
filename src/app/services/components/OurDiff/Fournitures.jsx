@@ -39,12 +39,15 @@ const Fournitures = () => {
                         {
                             furnitures.map((feature, i)=> (
                                 <motion.div 
-                                variants={containerVariants((i + 1) * 0.1)}
-                                initial="offscreen"
-                                whileInView="onscreen"
-                                key={i} className='od-feature'>
-                                    {/* <Image src={feature.icon} alt="feature" width={128} height={128} /> */}
-                                    <span className='sec-title'>{feature.title}</span>
+                                    variants={containerVariants((i + 1) * 0.1)}
+                                    initial="offscreen"
+                                    whileInView="onscreen"
+                                    key={i} className='my-4'
+                                >
+                                    <div>
+                                        <h3 className='mb-2 text-black text-xl font-bold'>{feature.title}</h3>
+                                    </div>
+                                    <div className='od-supply bg-[image:var(--image-url)] bg-cover py-32'  style={{'--image-url': `url(${feature.bg})`}} />
                                     <span className=''>{feature.des}</span>
                                 </motion.div>
                             ))
