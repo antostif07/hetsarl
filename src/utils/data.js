@@ -166,4 +166,18 @@ export const testimonialsData = [
     profession: "Koweit",
     image: "/partner-2.jpg",
   },
+  {
+    comment:
+      "I have been working with Cotek on our fundraising strategies. They understands the in depth strategies of Venture Capital and early stage fund raising/company",
+    name: "Iron Currency Solutions",
+    profession: "",
+    image: "/partner-3.jpg",
+  },
+  {
+    comment:
+      "I have been working with Cotek on our fundraising strategies. They understands the in depth strategies of Venture Capital and early stage fund raising/company",
+    name: "Glomae Power And Energy LTD",
+    profession: "",
+    image: "/partner-4.jpg",
+  },
 ];
