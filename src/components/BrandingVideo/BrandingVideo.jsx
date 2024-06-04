@@ -4,7 +4,7 @@ import React, { useRef } from 'react'
 import './BrandingVideo.css'
 import { motion, useScroll, useTransform } from 'framer-motion'
 
-const BrandingVideo = () => {
+const BrandingVideo = ({video}) => {
     const ref = useRef(null);
     const {scrollYProgress} = useScroll({
         target: ref,
@@ -18,11 +18,11 @@ const BrandingVideo = () => {
         <div className="container">
             <motion.video 
             ref={ref}
-            className='bv-video'
-            loop muted autoPlay controls=""
-            style={{scale}}
+            className='rounded-3xl' autoPlay={false}
+            loop muted controls={true}
+            // style={{scale}}
             >
-                <source src='/video.mp4' type='video/mp4' />
+                <source src={video} type='video/mp4' />
             </motion.video>
         </div>
     </div>

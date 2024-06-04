@@ -2,6 +2,7 @@ import React from 'react'
 import './OurDiff.css'
 import { motion } from 'framer-motion'
 import { containerVariants, desVariants, tagVariants, titleVariants } from '@/utils/animation'
+import BrandingVideo from '../../../../components/BrandingVideo/BrandingVideo'
 
 const Investment = () => {
   return (
@@ -56,6 +57,16 @@ const Investment = () => {
                         Si vous avez besoin de multiplier votre argent, le Congo est un paradis. Ne suivez pas ce que disent les médias, c'est la politique, la réalité est tout autre. Nous sommes ouverts et disposés à discuter de toute forme d'affaires. "Il n'y a aucune chance, aucun destin, aucun destin qui puisse entraver la ferme détermination d'une âme déterminée.
                         </p>
                     </motion.span>
+                    <h2 className='text-black font-bold text-xl'>Nos Mines & Carrières</h2>
+                    <div className='grid grid-cols-1 sm:grid-cols-2 gap-8'>
+                        <BrandingVideo video={`/videos/het-sarl-1.mp4`} />
+                        <BrandingVideo video={`/videos/het-sarl-3.mp4`} />
+                        <BrandingVideo video={`/videos/het-sarl-4.mp4`} />
+                        <BrandingVideo video={`/videos/het-sarl-5.mp4`} />
+                        <BrandingVideo video={`/videos/het-sarl-6.mp4`} />
+                        <BrandingVideo video={`/videos/het-sarl-7.mp4`} />
+                        <BrandingVideo video={`/videos/het-sarl-2.mp4`} />
+                    </div>
                 </div>
             </div>
         </div>
