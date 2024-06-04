@@ -20,8 +20,7 @@ const Footer = () => {
                     </div>
                     <div className='flex flex-col text-white'>
                         <span className='font-bold'>Adresse</span>
-                        <span>Référence En diagonale de l'hôtel memling <br />
-Adresse : Avenue du Tchad/ numéro 5 /commune de la gombe</span>
+                        <span>Adresse : Avenue du Tchad/ numéro 5 /commune de la gombe</span>
                     </div>
                 </div>
                 <hr className='bg-white'/>
