@@ -40,7 +40,7 @@ const Hero = () => {
   return (
     <div className="h-wrapper">
         <div className="container">
-            <img src="logo-hetsarl-b.png" alt="" className="h-arrow opacity-30" />
+            <img src="logo-hetsarl-b.png" alt="" className="h-arrow opacity-10" />
             <div className="h-container">
                 {/* left Side */}
                 <div className="h-left">

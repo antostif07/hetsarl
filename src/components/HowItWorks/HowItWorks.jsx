@@ -54,6 +54,11 @@ const   HowItWorks = () => {
                             style={{'--image-url': `url(${feature.bg})`}}
                             className={`hiw-feature bg-[image:var(--image-url)] bg-cover relative`} 
                             key={i}>
+                                <div>
+                                    <Image
+                                        src={feature.bg} width={500} height={500}
+                                    />
+                                </div>
                                 <div className="bg-[#00000071] w-full h-full absolute -m-[16px] rounded-[2rem]"></div>
                                 {/* left side */}
                                 <motion.div 

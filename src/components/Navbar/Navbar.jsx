@@ -7,6 +7,7 @@ import {RxCross2} from 'react-icons/rx'
 import {useMotionValueEvent, useScroll} from 'framer-motion';
 import Logo from '../Logo'
 import Link from 'next/link'
+import { Select, SelectGroup, SelectItem, SelectTrigger, SelectContent, SelectLabel, SelectValue } from '../ui/select'
 
 export const menuItems = [
     {
@@ -35,6 +36,10 @@ const Navbar = () => {
         }
     })
 
+    const handleChange = (e) => {
+        console.log(e)
+    }
+
   return (
     <div className={`n-wrapper ${navStyle}`}>
         {/* desktop version */}
@@ -47,8 +52,8 @@ const Navbar = () => {
                 </div>
 
                 {/* right side */}
-                <div className="n-right">
-                    <div className="n-menu">
+                <div className="flex w-full">
+                    <div className="flex">
                         {
                             menuItems.map( item => (
                                 <Link
@@ -58,21 +63,27 @@ const Navbar = () => {
                                 </Link>
                             ))
                         }
-                        {/* <Link to="wwd-wrapper" spy={true} smooth={true} >
-                            <span>What we do</span>
-                        </Link>
-                        <Link to="hiw-wrapper" spy smooth offset={100} >
-                            <span>How it works</span>
-                        </Link>
-                        <Link to="wwi-wrapper" spy smooth >
-                            <span>Who we invest in</span>
-                        </Link>
-                        <Link to="t-wrapper" spy smooth offset={100} >
-                            <span>Testimonials</span>
-                        </Link> */}
                     </div>
                     <div className="fund-button">
                         Nous contacter
+                    </div>
+                    <div>
+                    <Select name="assignment" onValueChange={handleChange}>
+                        <SelectTrigger className="">
+                            <SelectValue placeholder="FR" />
+                        </SelectTrigger>
+                        <SelectContent>
+                            <SelectGroup>
+                                <SelectLabel>Langue</SelectLabel>
+                                    <SelectItem value="fr">
+                                        FR
+                                    </SelectItem>
+                                    <SelectItem value="en">
+                                        EN
+                                    </SelectItem>
+                            </SelectGroup>
+                        </SelectContent>
+                    </Select>
                     </div>
                 </div>
             </div>

@@ -1,12 +1,12 @@
 import "./globals.css";
-import {Josefin_Sans} from 'next/font/google';
+import {Overpass} from 'next/font/google';
 
 export const metadata = {
   title: "HET SARL",
   description: "Site officiel de HET SARL",
 };
 
-const Josef = Josefin_Sans({
+const Josef = Overpass({
   subsets: ['latin'],
   weight: ['100', '200', '300', '400', '500', '600', '700'],
   display: 'swap'
