@@ -5,9 +5,10 @@ import './Hero.css'
 import EmailBox from '../EmailBox/EmailBox'
 import { HeroData } from '@/utils/data'
 import {motion} from 'framer-motion'
+import { useTranslations } from 'next-intl'
 
 const Hero = () => {
-
+    const t = useTranslations('Home');
     const variants = (delay) => ({
         initial : {
             y: "18rem"
@@ -98,7 +99,7 @@ const Hero = () => {
                     </div>
 
                     <div className="h-description">
-                    Nous travaillons comme une société de négoce entre les entreprises publiques, privée, les coopératives et la chambre de commerce congo avec un meilleur suivi pour une réussite totale.
+                    {t('hero')}
                     </div>
                     <EmailBox />
                 </div>

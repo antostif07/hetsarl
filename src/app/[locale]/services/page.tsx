@@ -1,13 +1,12 @@
 "use client"
 
-import Navbar from '@/components/Navbar/Navbar';
-import './page.css'
-import Hero from '@/components/Hero/Hero';
-import WhatWeDo from '@/components/WhatWeDo/WhatWeDo';
 import { motion, useAnimation } from 'framer-motion';
-import HowItWorks from '@/components/HowItWorks/HowItWorks';
-import Testimonials from '@/components/Testimonials/Testimonials';
-import Footer from '@/components/Footer/Footer';
+import Footer from '@/app/[locale]/components/Footer/Footer';
+import Navbar from '@/components/Navbar/Navbar';
+import OurDiff from '@/app/services/components/OurDiff/OurDiff'
+import Fournitures from '@/app/services/components/OurDiff/Fournitures'
+import Investment from '@/app/services/components/OurDiff/Investment'
+import Title from '@/app/[locale]/components/Title'
 
 export default function Home() {
 
@@ -16,10 +15,22 @@ export default function Home() {
   return (
     <motion.div className="app" animate={controls}>
       <Navbar />
-      <Hero />
-      {/* <BrandingVideo /> */}
-      <WhatWeDo />
-      {/* <motion.div
+      <Title text={"Nos Services"} imageUrl='/bg.jpg' />
+      <motion.div
+      onViewportEnter={()=> 
+        controls.start({
+          backgroundColor: "var(--secondary-color)",
+        })
+      } 
+      onViewportLeave={()=> controls.start({
+        backgroundColor: "white",
+      })}
+      viewport={{amount: 0.1}}
+      >
+        <OurDiff />
+      </motion.div>
+      <Fournitures />
+      <motion.div
       onViewportEnter={()=> 
         controls.start({
           backgroundColor: "var(--secondary-color)",
@@ -30,25 +41,8 @@ export default function Home() {
       })}
       viewport={{amount: 0.4}}
       >
-        <OurDiff />
-      </motion.div> */}
-      <HowItWorks />
-
-      {/* <motion.div
-      onViewportEnter={()=> 
-        controls.start({
-          backgroundColor: "var(--primary-color)",
-        })
-      } 
-      onViewportLeave={()=> controls.start({
-        backgroundColor: "white",
-      })}
-      viewport={{amount: 0.4}}
-      >
-        <WhoWeInvest />
-      </motion.div> */}
-
-      <Testimonials />
+        <Investment />
+      </motion.div>
       <Footer />
     </motion.div>
   );

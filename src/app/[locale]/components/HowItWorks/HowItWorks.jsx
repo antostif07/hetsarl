@@ -1,11 +1,12 @@
 import React from 'react'
 import './HowItWorks.css'
 import { hitFeatures } from '@/utils/data'
-import Image from 'next/image'
 import {motion} from 'framer-motion'
 import { tagVariants, titleVariants } from '@/utils/animation'
+import { useTranslations } from 'next-intl'
 
-const   HowItWorks = () => {
+const HowItWorks = () => {
+    const t = useTranslations('Our-Services')
 
     const featureVariants = {
         offscreen: {
@@ -32,7 +33,7 @@ const   HowItWorks = () => {
                     whileInView={"onscreen"}
                     className='tag'
                     >
-                        Nos Services
+                        {t('title')}
                     </motion.span>
                     {/* <motion.span 
                     variants={titleVariants}
@@ -70,8 +71,8 @@ const   HowItWorks = () => {
                                 className="detail relative"
                                 >
                                     {/* <span className='text-white'>0{i+1}</span> */}
-                                    <span className='capitalize text-6xl text-white tag'>{feature.title}</span>
-                                    <span className='text-white text-sm sm:text-xl'>{feature.des}</span>
+                                    <span className='capitalize text-6xl text-white tag'>{t(`service-${i+1}`)}</span>
+                                    <span className='text-white text-sm sm:text-xl'>{t(`desc-${i+1}`)}</span>
                                 </motion.div>
 
                                 {/* right side */}

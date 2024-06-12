@@ -1,3 +1,4 @@
+
 export const HeroData = [
   {
     src: "hero/landing-1.jpg",

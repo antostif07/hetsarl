@@ -5,8 +5,10 @@ import './WhatWeDo.css'
 import { motion } from 'framer-motion'
 import { containerVariants, desVariants, tagVariants, titleVariants } from '@/utils/animation'
 import Link from 'next/link'
+import { useTranslations } from 'next-intl'
 
 const WhatWeDo = () => {
+    const t = useTranslations('About-us')
   return (
     <div className="wwd-wrapper bg-[url('/4.jpg')] bg-cover bg-no-repeat relative">
         <div className="bg-[#000000b1] w-full h-full absolute"></div>
@@ -19,7 +21,9 @@ const WhatWeDo = () => {
                     whileInView={"onscreen"}
                     variants={tagVariants}
                     className='tag'
-                    >A Propos de nous</motion.span>
+                    >
+                        {t('title')}
+                    </motion.span>
                     <motion.span
                     initial="offscreen"
                     whileInView={"onscreen"}
@@ -34,7 +38,9 @@ const WhatWeDo = () => {
                     whileInView={"onscreen"}
                     variants={desVariants}
                     className='text-xl'
-                    >en sigle HET SARL, est une société de droit congolais, créée en 2017 et opérant actuellement à Kinshasa et sur toute l'étendue de la RDC. Elle vise à faciliter la mise en relation d'affaires entre les acheteurs et les vendeurs dans tous les secteurs, principalement dans le secteur minier (or, diamant, coltan, lithium, niobium, cuivre, cobalt, wolframite, fer, étain et bien d'autres). Nous sommes en mesure de fournir des services commerciaux variés tels que la fourniture de matières premières (métaux), la gestion de projets privés et publics de l'État, en partenariat avec la Chambre de commerce officielle du Congo. Ainsi, nous avons pour objectif de contribuer à la réduction de la pauvreté, à la création d'emplois et au développement global du pays. Nous sommes constitués en une plateforme au sein de laquelle nous rassemblons des producteurs et des coopératives dans les secteurs minier, agricole et bien d'autres.</motion.span>
+                    >
+                    {t('desc')}    
+                    </motion.span>
                 </div>
 
                 {/* two blocks */}
@@ -133,7 +139,7 @@ const WhatWeDo = () => {
                         </span>
                     </div> */}
                     <Link className="" href={"/about-us"}>
-                        Voir Plus
+                        {t('see-more')}
                     </Link>
                 </motion.div>
             </div>

@@ -3,8 +3,11 @@ import './EmailBox.css'
 import {LuMail} from 'react-icons/lu'
 import {motion} from 'framer-motion'
 import { containerVariants } from '@/utils/animation'
+import { useTranslations } from 'next-intl'
 
 const EmailBox = () => {
+  const t = useTranslations('Global');
+
   return (
     <motion.div 
     initial={{
@@ -41,7 +44,7 @@ const EmailBox = () => {
           once: true,
         }} 
         type="email" 
-        placeholder='Votre mail' />
+        placeholder={t('your-mail')} />
 
         {/* get funded button */}
         <motion.div 
@@ -52,7 +55,7 @@ const EmailBox = () => {
           once: true,
         }}
         className="getFunded text-xs px-2">
-            Nous Contacter
+            {t('contact-us')}
         </motion.div>
     </motion.div>
   )

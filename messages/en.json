@@ -1,0 +1,29 @@
+{
+    "Navbar": {
+      "home": "Home",
+      "about-us": "About Us",
+      "services": "Services",
+      "contact-us": "Contact Us"
+    },
+    "Home": {
+        "hero": "We operate as a trading company, facilitating business between public, private, and cooperative entities, as well as the Congo Chamber of Commerce. We provide comprehensive monitoring for complete success."
+    },
+    "About-us": {
+        "title": "About Us",
+        "desc": "HET SARL, a Congolese limited liability company established in 2017, operates in Kinshasa and throughout the Democratic Republic of Congo. Our mission is to facilitate business connections between buyers and sellers across all sectors, with a focus on the mining sector (gold, diamond, coltan, lithium, niobium, copper, cobalt, wolframite, iron, tin, and more). We offer a range of commercial services including the supply of raw materials (metals), and the management of private and public state projects, in partnership with the official Congo Chamber of Commerce. Our goal is to contribute to poverty reduction, job creation, and the overall development of the country. We act as a platform bringing together producers and cooperatives in the mining, agricultural, and other sectors.",
+        "see-more": "More"
+    },
+    "Our-Services": {
+        "title": "Our Services",
+        "service-1": "Brokerage",
+        "desc-1": "We have established ourselves as a trading platform and have built an efficient and reliable network of mining producers and cooperatives that extract raw materials. We are able to supply highly sought-after strategic minerals for modern industries.",
+        "service-2": "Providing goods and services",
+        "desc-2": "Our company offers a full range of services, including cleaning, restocking, painting and home and building renovation, general maintenance, IT equipment delivery, air conditioning maintenance, office supplies provision, and general maintenance.",
+        "service-3": "Investment / Trading",
+        "desc-3": "Our company maintains strong relationships within the investment sector, including with the National Chamber of Commerce and Economy of the Democratic Republic of Congo (CCNE-RDC), to promote the immense potential of the DRC across all key sectors of development."
+    },
+    "Global": {
+        "your-mail": "Your Mail",
+        "contact-us": "Contact Us"
+    }
+}

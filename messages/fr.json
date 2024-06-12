@@ -1,0 +1,29 @@
+{
+    "Navbar": {
+      "home": "Acceuil",
+      "about-us": "A Propos",
+      "services": "Services",
+      "contact-us": "Nous Contacter"
+    },
+    "Home": {
+        "hero": "Nous travaillons comme une société de négoce entre les entreprises publiques, privée, les coopératives et la chambre de commerce congo avec un meilleur suivi pour une réussite totale."
+    },
+    "About-us": {
+        "title": "A propos de nous",
+        "desc": "en sigle HET SARL, est une société de droit congolais, créée en 2017 et opérant actuellement à Kinshasa et sur toute l'étendue de la RDC. Elle vise à faciliter la mise en relation d'affaires entre les acheteurs et les vendeurs dans tous les secteurs, principalement dans le secteur minier (or, diamant, coltan, lithium, niobium, cuivre, cobalt, wolframite, fer, étain et bien d'autres). Nous sommes en mesure de fournir des services commerciaux variés tels que la fourniture de matières premières (métaux), la gestion de projets privés et publics de l'État, en partenariat avec la Chambre de commerce officielle du Congo. Ainsi, nous avons pour objectif de contribuer à la réduction de la pauvreté, à la création d'emplois et au développement global du pays. Nous sommes constitués en une plateforme au sein de laquelle nous rassemblons des producteurs et des coopératives dans les secteurs minier, agricole et bien d'autres.",
+        "see-more": "Voir plus"
+    },
+    "Our-Services": {
+        "title": "Nos Services",
+        "service-1": "Négoce",
+        "desc-1": "Nous nous constituons en une plateforme de négoce et avons construit un réseau efficace et fiable de producteurs et de coopératives minières qui exploitent les matières premières. Nous avons la possibilité de fournir des minerais stratégiques très recherchés pour les industries modernes.",
+        "service-2": "Fournitures de bien et service",
+        "desc-2": "Notre société propose une gamme complète de services, incluant le nettoyage, le réapprovisionnement, la peinture et la rénovation de maisons et bâtiments, l'entretien général, la livraison de matériel informatique, l'entretien de climatisation, la fourniture de consommables de bureau et la maintenance générale.",
+        "service-3": "Investissement / Trading",
+        "desc-3": "Notre société entretient des rapports solides dans le secteur de l'investissement avec la Chambre de commerce nationale et de l'économie du Congo (CCNE-RDC) afin d'assurer la promotion des immenses potentialités de la RDC dans tous les secteurs clés du développement."
+    },
+    "Global": {
+        "your-mail": "Votre Mail",
+        "contact-us": "Nous Contacter"
+    }
+}

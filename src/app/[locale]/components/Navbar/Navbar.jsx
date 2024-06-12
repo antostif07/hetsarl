@@ -1,29 +1,43 @@
 "use client"
 
-import React, { useState } from 'react'
+import React, { useState, useTransition } from 'react'
 import './Navbar.css'
 import {BiMenuAltRight} from 'react-icons/bi'
 import {RxCross2} from 'react-icons/rx'
 import {useMotionValueEvent, useScroll} from 'framer-motion';
 import Logo from '../Logo'
 import Link from 'next/link'
-
-export const menuItems = [
-    {
-        name: "Accueil",
-        link: "/"
-    },
-    {
-        name: "A Propos",
-        link: "/about-us"
-    },
-    {
-        name: "Services",
-        link: "/services"
-    },
-  ];
+import {useLocale, useTranslations} from 'next-intl';
+import { useParams, useRouter } from 'next/navigation'
 
 const Navbar = () => {
+    const t = useTranslations('Navbar');
+    const [isPending, startTransition] = useTransition()
+    const router = useRouter()
+    const localeActive = useLocale()
+
+    const handleLang = (s) => {
+        console.log(s);
+        startTransition(() => {
+            router.replace(`/${s}`)
+        })
+    }
+
+    const menuItems = [
+        {
+            name: t('home'),
+            link: "/"
+        },
+        {
+            name: t('about-us'),
+            link: "/about-us"
+        },
+        {
+            name: t('services'),
+            link: "/services"
+        },
+      ];
+
     const [mobileMenuOpened, setMobileMenuOpened] = useState(false)
     const [navStyle, setNavStyle] = useState("");
     const { scrollYProgress } = useScroll();
@@ -72,7 +86,27 @@ const Navbar = () => {
                         </Link> */}
                     </div>
                     <div className="fund-button">
-                        Nous contacter
+                        {t('contact-us')}
+                    </div>
+                    <div>
+                        <ul className='flex gap-2 items-center'>
+                            <li>
+                                <button
+                                    className={localeActive === 'en' ? "bg-black p-2 rounded-md" : ""}
+                                    onClick={() => handleLang('en')}  disabled={isPending}
+                                >
+                                    EN
+                                    </button>
+                            </li>
+                            <li>
+                                <button 
+                                    className={localeActive === 'fr' ? "bg-black p-2 rounded-md" : ""}
+                                    onClick={() => handleLang('fr')} disabled={isPending}
+                                >
+                                    FR
+                                </button>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
@@ -112,6 +146,12 @@ const Navbar = () => {
                 }
                 <div className="m-funded-button">
                     Nous Contacter
+                </div>
+                <div>
+                    <ul>
+                        <li>EN</li>
+                        <li>FR</li>
+                    </ul>
                 </div>
             </div>
 

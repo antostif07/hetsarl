@@ -1,10 +1,26 @@
 import React from 'react'
 import './Footer.css'
 import EmailBox from '../EmailBox/EmailBox'
-import { menuItems } from '../Navbar/Navbar'
 import Link from 'next/link'
+import {useTranslations} from 'next-intl';
 
 const Footer = () => {
+    const t = useTranslations('Navbar');
+    const menuItems = [
+        {
+            name: t('home'),
+            link: "/"
+        },
+        {
+            name: "A Propos",
+            link: "/about-us"
+        },
+        {
+            name: "Services",
+            link: "/services"
+        },
+      ];
+
   return (
     <div className="f-wrapper">
         <div className="container">
