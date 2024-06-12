@@ -5,7 +5,7 @@ import { motion, useAnimation } from 'framer-motion';
 import HowItWorks from '@/app/[locale]/components/HowItWorks/HowItWorks';
 import Testimonials from '@/app/[locale]/components/Testimonials/Testimonials';
 import Footer from '@/app/[locale]/components/Footer/Footer';
-import Navbar from '@/components/Navbar/Navbar';
+import Navbar from '../components/Navbar/Navbar';
 import Title from "@/app/[locale]/components/Title";
 
 export default function Home() {

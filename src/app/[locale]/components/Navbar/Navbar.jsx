@@ -26,15 +26,15 @@ const Navbar = () => {
     const menuItems = [
         {
             name: t('home'),
-            link: "/"
+            link: `/${localeActive}`
         },
         {
             name: t('about-us'),
-            link: "/about-us"
+            link: `/${localeActive}/about-us`
         },
         {
             name: t('services'),
-            link: "/services"
+            link: `/${localeActive}/services`
         },
       ];
 
