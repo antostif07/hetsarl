@@ -71,7 +71,7 @@ const Investment = () => {
                     <div className='grid grid-cols-1 sm:grid-cols-3 gap-8'>
                         {
                             [0, 1, 2, 3, 4, 5, 6, 7, 8, 9].map(i => (
-                                <Image src={`/investment-${i+1}.jpg`} alt="Investment" height={300} width={300} />
+                                <Image src={`/investment-${i+1}.jpg`} alt="Investment" height={300} width={300} key={i} />
                             ))
                         }
                     </div>
