@@ -1,6 +1,6 @@
 import React from 'react'
-import '@/components/OurDiff/OurDiff.css'
-import '@/components/HowItWorks/HowItWorks.css'
+import '../OurDiff/OurDiff.css'
+import '../../../components/HowItWorks/HowItWorks.css'
 import { motion } from 'framer-motion'
 import { containerVariants, desVariants, tagVariants, titleVariants } from '@/utils/animation'
 import { furnitures } from '@/utils/data'

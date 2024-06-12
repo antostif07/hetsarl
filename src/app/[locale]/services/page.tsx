@@ -2,11 +2,11 @@
 
 import { motion, useAnimation } from 'framer-motion';
 import Footer from '@/app/[locale]/components/Footer/Footer';
-import Navbar from '@/components/Navbar/Navbar';
-import OurDiff from '@/app/services/components/OurDiff/OurDiff'
-import Fournitures from '@/app/services/components/OurDiff/Fournitures'
-import Investment from '@/app/services/components/OurDiff/Investment'
+import OurDiff from '@/app/[locale]/services/components/OurDiff/OurDiff'
+import Fournitures from '@/app/[locale]/services/components/OurDiff/Fournitures'
+import Investment from '@/app/[locale]/services/components/OurDiff/Investment'
 import Title from '@/app/[locale]/components/Title'
+import Navbar from '../components/Navbar/Navbar';
 
 export default function Home() {
 

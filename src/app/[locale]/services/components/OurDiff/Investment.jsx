@@ -2,7 +2,7 @@ import React from 'react'
 import './OurDiff.css'
 import { motion } from 'framer-motion'
 import { containerVariants, desVariants, tagVariants, titleVariants } from '@/utils/animation'
-import BrandingVideo from '../../../../components/BrandingVideo/BrandingVideo'
+import BrandingVideo from '../../../components/BrandingVideo/BrandingVideo'
 import Image from 'next/image'
 
 const Investment = () => {
