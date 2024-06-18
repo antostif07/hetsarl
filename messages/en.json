@@ -25,5 +25,38 @@
     "Global": {
         "your-mail": "Your Mail",
         "contact-us": "Contact Us"
+    },
+    "Services": {
+        "services": "Our Services",
+        "trading": "Trading",
+        "trading_description": "We are a trading platform and have built an efficient and reliable network of producers and mining cooperatives that exploit raw materials. We are able to provide highly sought-after strategic minerals for modern industries. We have the following minerals in our portfolio: gold, copper concentrate cathode, cobalt concentrate and hydroxide, coltan, wolframite, cassiterite, lithium, diamond, bauxite, iron, tin, nickel, ilmenite, niobium, colored stones, germanium, clay, asphalt sand, red, green, black wood and charcoal, platinum, palladium, vanadium, and many other strategic materials.",
+        "opportunities": "The DRC is a vast country with multiple opportunities in all sectors. We are very open to any proposal to form a win-win partnership with you. The company relies on the vast experience, knowledge and skills of its staff with a mindset based on 95% success and 5% strategy, with the determination to take our company to new horizons. Don't always give credit to what some media say about Congo because the reality is different. The Democratic Republic of Congo is a continent-country very rich with multiple possibilities and a continental agricultural vocation, including thousands of empty hectares accompanied by streams.",
+        "goods_services": "Supply of goods and services",
+        "goods_services_description": "We offer a full range of goods and services, including:\nCleaning\nProfessional maintenance of your premises and workspaces.\nRestocking\nManagement and supply of your product and material stocks.\nPainting and renovation\nRenovation and beautification of your homes and buildings.\nGeneral maintenance\nTaking care of the regular maintenance of your facilities.\nDelivery of computer equipment\nSupply and delivery of computer equipment tailored to your needs.\nAir conditioning maintenance\nMaintenance and repair of your air conditioning systems.\nOffice supplies\nSupply of all your office supply needs.\nGeneral maintenance\nIntervention and repair on your equipment and facilities.",
+        "investment_trading": "Investment and Trading",
+        "investment_trading_description": "Our company maintains strong relationships in the investment sector with the National Chamber of Commerce and Economy of Congo (CCNE-RDC) to promote the immense potential of the DRC in all key development sectors.\n\nFor the security of your investments in the DRC, the presidency, keen to fight corruption and establish a stable business climate, has set up a body called AZES (Agency for Special Economic Zones). AZES facilitates and supports the installation of production or manufacturing plants in all sectors, ensures investment security and grants exemptions in terms of equipment. We can also facilitate the creation of a company with our law firm.",
+        "partnerships": "We are looking for partners in the following areas: telecommunications, agro-industry, construction, renewable energies, electricity, health, mining, exploitation of 21 oil blocks and 3 gas blocks or the establishment of an oil refinery, fishing, livestock farming, transport (maritime, rail, air, digital), certification of oil blocks and mining squares.",
+        "context": "The context in the DRC is favorable with the BOT, JV and PPP systems, or at the limit, exchanges with raw materials to enable the country to develop itself. We need flexible and ambitious partners, whatever their origin. We are masters of our destiny and free to deal with everyone, at least on the same wavelength and in a mutually beneficial relationship.",
+        "raw_materials": "We have mines of raw materials to trade or serve as collateral for financing.",
+        "partnership_call": "The company hearing electronic tools SARL launches an appeal to any partner regardless of the field to have representation in the DRC in a fruitful and global collaboration.",
+        "waste_management": "We are also looking for financial partners for the management of household waste in Kinshasa, especially plastic waste for transformation into fuel. We already have a target market and more or less 10 million tons of waste.",
+        "investment_opportunity": "If you need to multiply your money, Congo is a paradise. Don't follow what the media says, it's politics, the reality is different. We are open and willing to discuss any form of business. \"There is no chance, no destiny, no fate that can hinder the firm determination of a determined soul.",
+        "mines_quarries": "Our Mines & Quarries",
+        "cleaning": "Cleaning",
+        "cleaning_description": "Professional maintenance of your premises and workspaces.",
+        "resupply": "Restocking",
+        "resupply_description": "Management and supply of your product and material stocks.",
+        "painting_renovation": "Painting and renovation",
+        "painting_renovation_description": "Renovation and beautification of your homes and buildings.",
+        "general_maintenance": "General maintenance",
+        "general_maintenance_description": "Taking care of the regular maintenance of your facilities.",
+        "computer_equipment_delivery": "Delivery of computer equipment",
+        "computer_equipment_delivery_description": "Supply and delivery of computer equipment tailored to your needs.",
+        "air_conditioning_maintenance": "Air conditioning maintenance",
+        "air_conditioning_maintenance_description": "Maintenance and repair of your air conditioning systems.",
+        "office_supplies": "Office supplies",
+        "office_supplies_description": "Supply of all your office supply needs.",
+        "overall_maintenance": "General maintenance",
+        "overall_maintenance_description": "Intervention and repair on your equipment and facilities."
     }
 }

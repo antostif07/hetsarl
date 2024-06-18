@@ -7,15 +7,16 @@ import Fournitures from '@/app/[locale]/services/components/OurDiff/Fournitures'
 import Investment from '@/app/[locale]/services/components/OurDiff/Investment'
 import Title from '@/app/[locale]/components/Title'
 import Navbar from '../components/Navbar/Navbar';
+import { useTranslations } from 'next-intl';
 
 export default function Home() {
-
+  const t = useTranslations('Services')
   const controls = useAnimation()
 
   return (
     <motion.div className="app" animate={controls}>
       <Navbar />
-      <Title text={"Nos Services"} imageUrl='/bg.jpg' />
+      <Title text={t('services')} imageUrl='/bg.jpg' />
       <motion.div
       onViewportEnter={()=> 
         controls.start({

@@ -4,8 +4,10 @@ import '../../../components/HowItWorks/HowItWorks.css'
 import { motion } from 'framer-motion'
 import { containerVariants, desVariants, tagVariants, titleVariants } from '@/utils/animation'
 import { furnitures } from '@/utils/data'
+import { useTranslations } from 'next-intl'
 
 const Fournitures = () => {
+    const t = useTranslations('Services')
   return (
     <div className="hiw-wrapper">
         <div className="container">
@@ -17,7 +19,7 @@ const Fournitures = () => {
                     initial="offscreen"
                     whileInView={"onscreen"}
                     className='hiw-head text-4xl'>
-                        Fourniture de biens et services
+                        {t('goods_services')}
                     </motion.span>
                     <div className="h-48 sm:h-96 w-full bg-[url('/fourniture-bg.jpg')] bg-cover bg-center rounded-3xl"></div>
                     {/* <motion.span 
@@ -33,7 +35,7 @@ const Fournitures = () => {
                     initial="offscreen"
                     whileInView={"onscreen"}
                     className='text-black'>
-                        Nous proposons une gamme complète de biens et services, couvrant notamment :
+                        {t('goods_services_description')}
                     </motion.span>
                     <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
                         {
@@ -45,10 +47,10 @@ const Fournitures = () => {
                                     key={i} className='my-4'
                                 >
                                     <div>
-                                        <h3 className='mb-2 text-black text-xl font-bold'>{feature.title}</h3>
+                                        <h3 className='mb-2 text-black text-xl font-bold'>{t(`${feature.title}`)}</h3>
                                     </div>
                                     <div className='od-supply bg-[image:var(--image-url)] bg-cover py-32'  style={{'--image-url': `url(${feature.bg})`}} />
-                                    <span className=''>{feature.des}</span>
+                                    <span className=''>{t(`${feature.des}`)}</span>
                                 </motion.div>
                             ))
                         }

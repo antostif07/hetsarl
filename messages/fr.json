@@ -25,5 +25,38 @@
     "Global": {
         "your-mail": "Votre Mail",
         "contact-us": "Nous Contacter"
+    },
+    "Services": {
+        "services": "Nos Services",
+        "trading": "Negoce",
+        "trading_description": "Nous nous constituons en une plateforme de négoce et avons construit un réseau efficace et fiable de producteurs et de coopératives minières qui exploitent les matières premières. Nous avons la possibilité de fournir des minerais stratégiques très recherchés pour les industries modernes. Nous avons à notre actif les minerais suivants : or, cuivre concentré cathode, cobalt concentré et hydroxyde, coltan, wolframite, cassitérite, lithium, diamant, bauxite, fer, étain, nickel, ilménite, niobium, pierres de couleur, germanium, argile, sable asphaltique, bois rouge, vert, noir et charbon de bois, platine, palladium, vanadium, et bien d'autres matières stratégiques.",
+        "opportunities": "La RDC est un pays vaste aux multiples opportunités dans tous les secteurs. Nous sommes très ouverts à toute proposition pour former un partenariat gagnant-gagnant avec vous. La société repose sur une vaste expérience, des connaissances et des compétences de ses personnels avec un état d'esprit basé à 95 % sur la réussite et 5 % sur la stratégie, avec la détermination de porter notre société vers de nouveaux horizons. Ne donnez pas toujours crédit à ce que disent certains médias pour le Congo car la réalité est autre. La République démocratique du Congo est un pays-continent très riche avec de multiples possibilités et une vocation agricole continentale, y compris des milliers d'hectares vides accompagnés de cours d'eau.",
+        "goods_services": "Fourniture de biens et services",
+        "goods_services_description": "Nous proposons une gamme complète de biens et services, couvrant notamment : \nNettoyage\nEntretien professionnel de vos locaux et espaces de travail.\nRéapprovisionnement\nGestion et fourniture de vos stocks de produits et de matériel.\nPeinture et rénovation\nRénovation et embellissement de vos maisons et bâtiments.\nEntretien général\nPrise en charge de l'entretien régulier de vos installations.\nLivraison de matériel informatique\nFourniture et livraison de matériel informatique adapté à vos besoins.\nEntretien de climatisation\nMaintenance et réparation de vos systèmes de climatisation.\nConsommables de bureau\nFourniture de tous vos besoins en fournitures de bureau.\nMaintenance générale\nIntervention et réparation sur vos équipements et installations.",
+        "investment_trading": "Investissement et Trading",
+        "investment_trading_description": "Notre société entretient des rapports solides dans le secteur de l'investissement avec la Chambre de commerce nationale et de l'économie du Congo (CCNE-RDC) afin d'assurer la promotion des immenses potentialités de la RDC dans tous les secteurs clés du développement.\n\nPour la sécurité de vos investissements en RDC, la présidence, soucieuse de lutter contre la corruption et d'instaurer un climat des affaires stable, a mis en place un organe appelé l'AZES (Agence de Zones Économiques Spéciales). L'AZES facilite et accompagne l'installation d'usines de production ou de fabrication dans tous les secteurs, assure la sécurité des investissements et accorde des exonérations en termes d'équipements. Nous pouvons également vous faciliter la création de société avec notre cabinet d'avocats.",
+        "partnerships": "Nous recherchons des partenaires dans les domaines suivants : télécommunications, agro-industrie, construction, énergies renouvelables, électricité, santé, exploitation minière, exploitation de 21 blocs pétroliers et 3 gaziers ou implantation d'une raffinerie de pétrole, pêche, élevage, transport (maritime, ferroviaire, aérien, numérique), certification de blocs pétroliers et de carrés miniers.",
+        "context": "Le contexte en RDC est favorable avec les systèmes de BOT, JV et PPP, ou à la limite, des échanges avec les matières premières afin de permettre au pays de s'auto-développer. Nous avons besoin de partenaires flexibles et ambitieux, quelle que soit leur origine. Nous sommes maîtres de notre destin et libres de traiter avec tout le monde, du moins sur la même longueur d'onde et dans un rapport mutuel gagnant-gagnant.",
+        "raw_materials": "Nous avons de mine de matières premières pour trader ou servir comme garantie pour les financements.",
+        "partnership_call": "La société hearing électronic tools SARL lence un appel a tout partenaire peut importe le domaine pour avoir une représentation en DRC dans d'une collaboration fructueuse et globale.",
+        "waste_management": "Nous sommes également à la recherche de partenaires financiers pour la gestion des déchets ménagers à Kinshasa, surtout les déchets plastiques pour la transformation en carburant. Nous avons déjà un marché cible et plus ou moins 10 millions de tonnes de déchets.",
+        "investment_opportunity": "Si vous avez besoin de multiplier votre argent, le Congo est un paradis. Ne suivez pas ce que disent les médias, c'est la politique, la réalité est tout autre. Nous sommes ouverts et disposés à discuter de toute forme d'affaires. \"Il n'y a aucune chance, aucun destin, aucun destin qui puisse entraver la ferme détermination d'une âme déterminée.",
+        "mines_quarries": "Nos Mines & Carrières",
+        "cleaning": "Nettoyage",
+        "cleaning_description": "Entretien professionnel de vos locaux et espaces de travail.",
+        "resupply": "Réapprovisionnement",
+        "resupply_description": "Gestion et fourniture de vos stocks de produits et de matériel.",
+        "painting_renovation": "Peinture et rénovation",
+        "painting_renovation_description": "Rénovation et embellissement de vos maisons et bâtiments.",
+        "general_maintenance": "Entretien général",
+        "general_maintenance_description": "Prise en charge de l'entretien régulier de vos installations.",
+        "computer_equipment_delivery": "Livraison de matériel informatique",
+        "computer_equipment_delivery_description": "Fourniture et livraison de matériel informatique adapté à vos besoins.",
+        "air_conditioning_maintenance": "Entretien de climatisation",
+        "air_conditioning_maintenance_description": "Maintenance et réparation de vos systèmes de climatisation.",
+        "office_supplies": "Consommables de bureau",
+        "office_supplies_description": "Fourniture de tous vos besoins en fournitures de bureau.",
+        "overall_maintenance": "Maintenance générale",
+        "overall_maintenance_description": "Intervention et réparation sur vos équipements et installations."
     }
 }

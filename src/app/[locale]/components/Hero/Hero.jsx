@@ -39,7 +39,7 @@ const Hero = () => {
     })
 
   return (
-    <div className="h-wrapper">
+    <div className="h-wrapper pt-12">
         <div className="container">
             <img src="logo-hetsarl-b.png" alt="" className="h-arrow opacity-30" />
             <div className="h-container">

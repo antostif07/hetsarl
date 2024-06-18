@@ -62,41 +62,41 @@ export const features = [
 export const furnitures = [
   {
     bg: "/furniture-1.jpg",
-    title: "Nettoyage",
-    des: "Entretien professionnel de vos locaux et espaces de travail.",
+    title: "cleaning",
+    des: "cleaning_description",
   },
   {
     bg: "/furniture-2.jpg",
-    title: "Réapprovisionnement",
-    des: "Gestion et fourniture de vos stocks de produits et de matériel.",
+    title: "resupply",
+    des: "resupply_description",
   },
   {
     bg: "/furniture-3.jpg",
-    title: "Peinture et rénovation",
-    des: "Rénovation et embellissement de vos maisons et bâtiments.",
+    title: "painting_renovation",
+    des: "painting_renovation_description",
   },
   {
     bg: "/furniture-5.jpg",
-    title: "Entretien général",
-    des: "Prise en charge de l'entretien régulier de vos installations.",
+    title: "general_maintenance",
+    des: "general_maintenance_description",
   },
   {
     bg: "/furniture-4.jpg",
-    title: "Livraison de matériel informatique",
-    des: "Fourniture et livraison de matériel informatique adapté à vos besoins.",
+    title: "computer_equipment_delivery",
+    des: "computer_equipment_delivery_description",
   },
   {
     bg: "/furniture-6.jpg",
-    title: "Entretien de climatisation",
-    des: "Maintenance et réparation de vos systèmes de climatisation.",
+    title: "air_conditioning_maintenance",
+    des: "air_conditioning_maintenance_description",
   },
   {
-    title: "Consommables de bureau",
-    des: "Fourniture de tous vos besoins en fournitures de bureau.",
+    title: "office_supplies",
+    des: "office_supplies_description",
   },
   {
-    title: "Maintenance générale",
-    des: "Intervention et réparation sur vos équipements et installations.",
+    title: "overall_maintenance",
+    des: "overall_maintenance_description",
   },
 ]
 

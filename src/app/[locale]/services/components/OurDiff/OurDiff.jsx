@@ -2,8 +2,11 @@ import React from 'react'
 import './OurDiff.css'
 import { motion } from 'framer-motion'
 import { containerVariants, desVariants, tagVariants, titleVariants } from '@/utils/animation'
+import { useTranslations } from 'next-intl'
 
 const OurDiff = () => {
+    const t = useTranslations('Services')
+
   return (
     <div className="pt-16">
         <div className="container">
@@ -15,7 +18,7 @@ const OurDiff = () => {
                     initial="offscreen"
                     whileInView={"onscreen"}
                     className='tag text-4xl'>
-                        Negoce
+                        {t('trading')}
                     </motion.span>
                     {/* <motion.span 
                     variants={titleVariants}
@@ -32,10 +35,10 @@ const OurDiff = () => {
                     className='text-white'>
                     <div className="h-48 sm:h-96 w-full bg-[url('/negoce-bg.jpg')] bg-cover bg-center rounded-3xl"></div>
                         <p className='mb-8'>
-                            Nous nous constituons en une plateforme de négoce et avons construit un réseau efficace et fiable de producteurs et de coopératives minières qui exploitent les matières premières. Nous avons la possibilité de fournir des minerais stratégiques très recherchés pour les industries modernes. Nous avons à notre actif les minerais suivants : or, cuivre concentré cathode, cobalt concentré et hydroxyde, coltan, wolframite, cassitérite, lithium, diamant, bauxite, fer, étain, nickel, ilménite, niobium, pierres de couleur, germanium, argile, sable asphaltique, bois rouge, vert, noir et charbon de bois, platine, palladium, vanadium, et bien d'autres matières stratégiques.
+                            {t('trading_description')}
                         </p>
                         <p>
-                        La RDC est un pays vaste aux multiples opportunités dans tous les secteurs. Nous sommes très ouverts à toute proposition pour former un partenariat gagnant-gagnant avec vous. La société repose sur une vaste expérience, des connaissances et des compétences de ses personnels avec un état d'esprit basé à 95 % sur la réussite et 5 % sur la stratégie, avec la détermination de porter notre société vers de nouveaux horizons. Ne donnez pas toujours crédit à ce que disent certains médias pour le Congo car la réalité est autre. La République démocratique du Congo est un pays-continent très riche avec de multiples possibilités et une vocation agricole continentale, y compris des milliers d'hectares vides accompagnés de cours d'eau.
+                            {t('opportunities')}
                         </p>
                     </motion.span>
                 </div>

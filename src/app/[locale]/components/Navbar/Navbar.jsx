@@ -50,7 +50,7 @@ const Navbar = () => {
     })
 
   return (
-    <div className={`n-wrapper ${navStyle}`}>
+    <div className={`n-wrapper ${navStyle} max-h-24 h-24`}>
         {/* desktop version */}
         <div className="container">
             <div className="n-container">
