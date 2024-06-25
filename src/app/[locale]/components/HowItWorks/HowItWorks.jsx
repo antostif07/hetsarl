@@ -49,7 +49,7 @@ const HowItWorks = () => {
                     {
                         hitFeatures.map((feature, i) => (
                             
-                                <div className="flex flex-col w-full items-center">
+                                <div className="flex flex-col w-full items-center" key={i}>
                                     <h2 className='capitalize text-xl text-white tag mb-8 whitespace-nowrap'>{t(`service-${i+1}`)}</h2>
                                     <motion.div 
                                         // variants={featureVariants}
