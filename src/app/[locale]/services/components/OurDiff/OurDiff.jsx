@@ -3,6 +3,9 @@ import './OurDiff.css'
 import { motion } from 'framer-motion'
 import { containerVariants, desVariants, tagVariants, titleVariants } from '@/utils/animation'
 import { useTranslations } from 'next-intl'
+import Image from 'next/image'
+
+const MotionImage = motion(Image)
 
 const OurDiff = () => {
     const t = useTranslations('Services')
@@ -56,6 +59,15 @@ const OurDiff = () => {
                                 <span className='sec-title'>{feature.title}</span>
                                 <span className='text'>{feature.des}</span> */}
                             </motion.div>
+                        ))
+                    }
+                    {
+                        [0, 1, 2, 3, 4, 5, 6, 7, 8, 9].map(i => (
+                            <MotionImage 
+                                variants={containerVariants((i + 1) * 0.1)}
+                                initial="offscreen"
+                                whileInView="onscreen"
+                                src={`/investment-${i+1}.jpg`} alt="Investment" height={300} width={300} key={i} />
                         ))
                     }
                 </div>

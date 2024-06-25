@@ -23,7 +23,7 @@ const HowItWorks = () => {
 
   return (
     <div className="pt-12">
-        <div className="container">
+        <div className="px-10">
             <div className="hiw-container">
                 {/* head */}
                 <div className="hiw-head">
@@ -45,51 +45,24 @@ const HowItWorks = () => {
                     </motion.span> */}
                 </div>
                 {/* features */}
-                <div className="hiw-features">
+                <div className='flex flex-col sm:flex-row gap-8'>
                     {
-                        hitFeatures.map((feature, i)=> (
-                            <motion.div 
-                            variants={featureVariants}
-                            initial="offscreen"
-                            whileInView={"onscreen"}
-                            style={{'--image-url': `url(${feature.bg})`}}
-                            className={`hiw-feature bg-[image:var(--image-url)] bg-cover relative`} 
-                            key={i}>
-                                <div className="bg-[#00000071] w-full h-full absolute -m-[16px] rounded-[2rem]"></div>
-                                {/* left side */}
-                                <motion.div 
-                                initial={{ opacity: 0, x: -100 }}
-                                whileInView={{
-                                    opacity: 1,
-                                    x: 0,
-                                    transition: {
-                                        type: 'easeIn',
-                                        duration: 1,
-                                        delay: .7
-                                    }
-                                }}
-                                className="detail relative"
-                                >
-                                    {/* <span className='text-white'>0{i+1}</span> */}
-                                    <span className='capitalize text-6xl text-white tag'>{t(`service-${i+1}`)}</span>
-                                    <span className='text-white text-sm sm:text-xl'>{t(`desc-${i+1}`)}</span>
-                                </motion.div>
-
-                                {/* right side */}
-                                {/* <div className="icon sm:w-96 w-32">
-                                    <Image 
-                                    src={feature.icon}
-                                    sizes='300px'
-                                    width={512} 
-                                    height={512} 
-                                    alt='feature' 
-                                    style={{translate: "50% 0rem"}}
-                                    />
-                                </div> */}
-                            </motion.div>
+                        hitFeatures.map((feature, i) => (
+                            
+                                <div className="flex flex-col w-full items-center">
+                                    <h2 className='capitalize text-xl text-white tag mb-8 whitespace-nowrap'>{t(`service-${i+1}`)}</h2>
+                                    <motion.div 
+                                        // variants={featureVariants}
+                                        initial="offscreen"
+                                        whileInView={"onscreen"}
+                                        style={{'--image-url': `url(${feature.bg})`}}
+                                        className={`bg-[image:var(--image-url)] bg-cover relative w-full h-36 rounded-3xl`} 
+                                        key={i}></motion.div>
+                                        <span className='text-white text-sm sm:text-md mt-4'>{t(`desc-${i+1}`)}</span>
+                                </div>
                         ))
                     }
-                </div>
+                    </div>
             </div>
         </div>
     </div>
